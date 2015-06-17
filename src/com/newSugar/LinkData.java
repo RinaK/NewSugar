@@ -49,8 +49,8 @@ public class LinkData {
         return pricea;
     }
  
-    public void setPrice(String price) {
-        this.pricea = price;
+    public void setPrice(String pricea) {
+        this.pricea = pricea;
     }
  
  
