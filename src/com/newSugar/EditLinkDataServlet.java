@@ -33,6 +33,6 @@ public class EditLinkDataServlet extends HttpServlet {
         data.setShohin(shohin);
         data.setPrice(price);
         manager.close();
-        resp.sendRedirect("index.html");
+        resp.sendRedirect("/admin.html");
     }
 }

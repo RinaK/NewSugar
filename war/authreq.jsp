@@ -7,6 +7,7 @@ contentType="text/html;charset=utf-8"
 <html>
     <head>
         <title>JSP Page</title>
+        
     </head>
     <body>
 <%

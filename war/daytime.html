@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>発送日時指定</title>
+    </head>
+    <body>
+    <form action="thankyou.html" method="post">
+        <p>発送日を入力してください</p>
+        <p>
+	<input type="text" name="month" size="10">月  <input type="text" name="day" size="10">日
+	</p>
+       <p>
+	時間を指定してください<select name="time">
+	<option value="morning">午前中</option>
+	<option value="lunch">12:00 ~ 14:00</option>
+	<option value="evening">14:00 ~ 17:00</option>
+	<option value="night">17:00 ~ 20:00</option>
+	</select>
+	</p>
+	<p>発送場所を記載してください。<br>
+	<textarea name="kanso" rows="4" cols="40"></textarea>
+	</p>
+	<p>
+	<input type="submit" value="注文決定"><input type="reset" value="リセット">
+	</p>
+    </body>
+</html>

@@ -1,4 +1,4 @@
-package com.newSugar ;
+package com.newSugar;
  
 import java.io.IOException;
 import java.net.URL;
@@ -25,10 +25,10 @@ public class AddLinkDataServlet extends HttpServlet {
             throws ServletException, IOException {
         req.setCharacterEncoding("UTF-8");
         String shohin = req.getParameter("shohin");
-        String pricea = req.getParameter("pricea");
-        //int price=Integer.parseInt(pricea);
-      /*  Date date = Calendar.getInstance().getTime();*/
-        LinkData data = new LinkData(shohin,pricea);
+        String price = req.getParameter("price");
+        //String comment = req.getParameter("comment");
+        Date date = Calendar.getInstance().getTime();
+        LinkData data = new LinkData(shohin,price/*,comment*/,date);
         PersistenceManagerFactory factory = PMF.get();
         PersistenceManager manager = factory.getPersistenceManager();
         try {

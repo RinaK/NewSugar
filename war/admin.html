@@ -12,11 +12,11 @@
             if (json.length == 1){
                 res += '<tr><td>' + json[0].id +'</td></tr>';
                 res += '<tr><td>' + json[0].shohin +'</td></tr>';
-                res += '<tr><td>' + json[0].pricea +'</td></tr>';
+                res += '<tr><td>' + json[0].price +'</td></tr>';
             } else {
                 for (var i = 0;i < json.length;i++){
-                    res += '<tr><td><a href="javascript:return false;" onclick="getData(' + json[i].id +');">' + json[i].id + '</a></td>';
-                    res += '<td>' + json[i].pricea + '">' + json[i].shohin + '</a></td>' +
+                    res += '<td>' + json[i].shohin + '</td>' +
+                    '<td>' + json[i].price +  '</td>' +
                     '<td><a href="edit.html?id=' + json[i].id + '">Edit</td>' +
                     '<td><a href="del.html?id=' + json[i].id + '">Delete</td></tr>';
                 }
@@ -37,5 +37,6 @@
     </table>
     <br>
     <div><a href="add.html">データの新規追加</a></div>
+    <div><a href="itemList.jsp">買い物ページへ</a></div>
   </body>
 </html>

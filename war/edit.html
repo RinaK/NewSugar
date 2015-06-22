@@ -16,7 +16,7 @@
             var data = arr[0];
             document.getElementById("id").value = data.id;
             document.getElementById("shohin").value = data.shohin;
-            document.getElementById("pricea").value = data.pricea;
+            document.getElementById("price").value = data.price;
         }
         //-->
         </script>
@@ -27,7 +27,7 @@
         <form method="post" action="/edit">
             <input type="hidden" id="id" name="id">
             <tr><th>商品：</th><td><input type="text" id="shohin" name="shohin"></td></tr>
-            <tr><th>価格:</th><td><input type="text" id="pricea" name="pricea"></td></tr>
+            <tr><th>価格:</th><td><input type="text" id="price" name="price"></td></tr>
            
             <tr><th></th><td><input type="submit" value="追加"></td></tr>
         </form>

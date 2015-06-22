@@ -104,7 +104,7 @@ public class LoginServlet extends HttpServlet {
 
      
                 //RequestDispatcher rd = request.getRequestDispatcher("/loginSuccess.jsp"); 
-                RequestDispatcher rd = request.getRequestDispatcher("itemListFromDB.html");
+                RequestDispatcher rd = request.getRequestDispatcher("/itemList.jsp");
              rd.forward(request, response);
 
               //end else
